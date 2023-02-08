@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>constructor-function</title>
+</head>
+<body>
+	<script>
+		function person(name,DOB,gender){
+			this.firstName=name;
+			this.DOB=DOB;
+			this.gender=gender,
+			this.msg=function(){
+				console.log(`welcome ${this.firstName}`);
+			}
+		}  
+		let one = new person("karthick","20-11-2002","male");
+		let two = new person("arun","4-2-2000","male");
+		console.log(one);
+		console.log(two);
+		console.log(one.msg());
+	</script>
+</body>
+</html>  
